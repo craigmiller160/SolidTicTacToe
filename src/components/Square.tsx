@@ -1,4 +1,4 @@
-import { createSignal } from 'solid-js';
+import { createSignal, Setter } from 'solid-js';
 import './Square.scss';
 
 interface Props {
@@ -10,17 +10,19 @@ interface Props {
     readonly right?: boolean;
 }
 
+const createToggle = (setValue: Setter<string>) => () => setValue((old) => {
+    if (old === '') {
+        return 'X';
+    } else if (old === 'X') {
+        return 'O';
+    } else {
+        return '';
+    }
+});
+
 export const Square = (props: Props) => {
     const [value, setValue] = createSignal('');
-    const toggle = () => setValue((old) => {
-        if (old === '') {
-            return 'X';
-        } else if (old === 'X') {
-            return 'O';
-        } else {
-            return '';
-        }
-    })
+    const toggle = createToggle(setValue);
     const classes = {
         Square: true,
         Top: props.top,
