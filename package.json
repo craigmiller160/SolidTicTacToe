@@ -1,10 +1,13 @@
 {
   "name": "SolidTicTacToe",
   "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build"
+  },
   "devDependencies": {
     "typescript": "^4.5.5",
+    "vite": "^2.8.4",
     "vite-plugin-solid": "^2.2.5"
   },
   "dependencies": {
