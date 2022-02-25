@@ -1,4 +1,7 @@
+import './Square.scss';
 
 export const Square = () => (
-    <h1>Square</h1>
+    <div className="Square">
+        <h1>Square</h1>
+    </div>
 );

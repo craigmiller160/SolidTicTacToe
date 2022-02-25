@@ -1,0 +1,10 @@
+.Square {
+  $size: 150px;
+  width: $size;
+  height: $size;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}

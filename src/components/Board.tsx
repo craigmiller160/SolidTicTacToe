@@ -1,4 +1,22 @@
+import './Board.scss';
+import { Square } from './Square';
 
 export const Board = () => (
-    <h1>Board</h1>
+    <div className="Board">
+        <div className="Row">
+            <Square />
+            <Square />
+            <Square />
+        </div>
+        <div className="Row">
+            <Square />
+            <Square />
+            <Square />
+        </div>
+        <div className="Row">
+            <Square />
+            <Square />
+            <Square />
+        </div>
+    </div>
 );
