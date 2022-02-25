@@ -1,5 +1,5 @@
 import { createSignal } from 'solid-js';
-import './style.css';
+import './style.scss';
 
 export const Counter = () => {
     const [count, setCount] = createSignal(0);
