@@ -1,4 +1,7 @@
 import { render } from 'solid-js/web';
 import { Counter } from './Counter';
 
-render(() => <Counter />, document.getElementById('root')!);
+const dispose = render(() => <Counter />, document.getElementById('root')!);
+if (import.meta.hot) {
+    import.meta.hot.dispose(dispose);
+}
