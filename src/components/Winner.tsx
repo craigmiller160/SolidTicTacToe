@@ -1,4 +1,4 @@
 
 export const Winner = () => (
-    <h3>The winner is: </h3>
+    <h2>The winner is: </h2>
 )
