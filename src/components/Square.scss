@@ -1,11 +1,37 @@
 .Square {
   $size: 150px;
+  $border: 1px solid black;
   width: $size;
   height: $size;
-  border: 1px solid black;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+
+  &.Top {
+    border-bottom: $border;
+  }
+
+  &.Left {
+    border-right: $border;
+  }
+
+  &.V_Center {
+    border-top: $border;
+    border-bottom: $border;
+  }
+
+  &.H_Center {
+    border-right: $border;
+    border-left: $border;
+  }
+
+  &.Bottom {
+    border-top: $border;
+  }
+
+  &.Right {
+    border-left: $border;
+  }
 }
