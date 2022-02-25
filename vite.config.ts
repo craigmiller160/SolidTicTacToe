@@ -4,6 +4,9 @@ import path from 'path';
 
 export default defineConfig({
     root: path.join(process.cwd(), 'src'),
+    server: {
+        port: 3001
+    },
     plugins: [solidPlugin()],
     build: {
         target: 'esnext'
