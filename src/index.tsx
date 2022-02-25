@@ -1,7 +1,7 @@
 import { render } from 'solid-js/web';
-import { Counter } from './Counter';
+import { Page } from './components/Page';
 
-const dispose = render(() => <Counter />, document.getElementById('root')!);
+const dispose = render(() => <Page />, document.getElementById('root')!);
 if (import.meta.hot) {
     import.meta.hot.dispose(dispose);
 }
